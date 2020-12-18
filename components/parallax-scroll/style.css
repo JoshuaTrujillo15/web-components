@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202020;
+    height: 150vh;
+}
+section {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-top: 300px;
+}
+
+#obj1 {
+    height: 300px;
+    width: 100%;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 0;
+}
+
+#obj2 {
+    height: 100px;
+    width: 50%;
+    background-color:darkorange;
+    position: absolute;
+    top: 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hex menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" onclick="expandFront()">
+        <div class="toggle" id="toggle_front">UI / UX</div>
+    </div>
+    <div class="menu" id="menu_front">
+        <div class="item">HTML</div>
+        <div class="item">CSS</div>
+        <div class="item">JavaScript</div>
+    </div>
+    <div class="container" onclick="expandBack()" id="container_back">
+        <div class="toggle" id="toggle_back">Server</div>
+    </div>
+    <div class="menu" id="menu_back">
+        <div class="item">Python</div>
+        <div class="item">MySQL</div>
+        <div class="item">Node.js</div>
+        <div class="item">Shell</div>
+        <div class="item">PHP</div>
+    </div>
+    <div class="container" onclick="expandOS()" id="container_os">
+        <div class="toggle" id="toggle_os">OS</div>
+    </div>
+    <div class="menu" id="menu_os">
+        <div class="item">Debian</div>
+        <div class="item">Windows</div>
+        <div class="item">Raspberry</div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
