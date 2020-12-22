@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+section {
+    padding: 8px;
+    margin: 48px auto;
+    border: 1px solid #888;
+    max-width: 750px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+}
+
+header button {
+    width: 25%;
+    background-color: #c661cb;
+    color: #fff;
+    border-radius: 999px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+header button:focus {
+    outline: none;
+    animation-name: press;
+    animation-duration: 0.5s;
+}
+
+.week {
+    border: 2px solid #888;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.day {
+    flex:1;
+    text-align: center;
+}
+
+.day:not(:first-child) {
+    border-left: 1px solid #888;
+}
+
+.day h2 {
+    border-bottom: 1px solid #888;
+    line-height: 2em;
+}
+
+.schedule {
+    background-color: #e1ffde;
+    height: 250px;
+}
+
+.unavailable {
+    background-color: #c661cb;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 75px;
+    color: #fff;
+    width: 95%;
+    height: 75px;
+    margin: auto;
+    transform: translateY(75px);
+}
+
+#ua2 {
+    transform: translateY(25px);
+}
+
+@keyframes press {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(4px);}
+    100% {transform: translateY(0);}
+}
