@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="box" id="primary">
+                <h2 id="on-primary">Primary</h2>
+            </div>
+            <div class="box" id="secondary">
+                <h2 id="on-secondary">Secondary</h2>
+            </div>
+        </div>
+
+        <div id="accent"></div>
+
+        <div class="row">
+            <div class="small-box" id="error">
+                <h2 id="on-error">Error</h2>
+            </div>
+            <div class="small-box" id="success">
+                <h2 id="on-success">Success</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 16;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            box-shadow: 0 0 8px #00000088;
+        }
+
+        .box {
+            border-radius: 4px;
+            width: 200px;
+            height: 200px;
+            padding: 12px;
+            box-sizing: border-box;
+            box-shadow: 0 0 8px #00000088;
+        }
+
+        .small-box {
+            border-radius: 4px;
+            width: 150px;
+            height: 150px;
+            padding: 12px;
+            box-sizing: border-box;
+            box-shadow: 0 0 8px #00000088;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #primary {
+            background-color: #fdfdff;
+        }
+
+        #secondary {
+            background-color: #202030;
+        }
+
+        #error {
+            border: 4px solid #ff0040;
+            background-color: #ff004022;
+        }
+
+        #success {
+            border: 4px solid #008040;
+            background-color: #00804022;
+        }
+
+        #on-primary {
+            color: #202040;
+        }
+
+        #on-secondary {
+            color: #f8f8ff;
+        }
+
+        #on-error {
+            color: #ff0040;
+        }
+
+        #on-success {
+            color: #008040;
+        }
+
+    </style>
+
+</body>
+</html>
